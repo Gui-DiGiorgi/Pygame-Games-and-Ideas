@@ -1,4 +1,5 @@
 # Player V1 = Accurate sample freq, but no autoplay/playlist while on background
+# Your songs need to be .mp3 and located on an file named 'input'
 
 import pygame
 from pygametexting import pyg_text
@@ -51,7 +52,7 @@ def ext_file_list(file_addr,ext):
     return ext_list
 
 
-mp3=ext_file_list(r'Your music directory on here',".mp3")
+mp3=ext_file_list(r'Your input music directory on here',".mp3")
 
 pygame.init()
 
