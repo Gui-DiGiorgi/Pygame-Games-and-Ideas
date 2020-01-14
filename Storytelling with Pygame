@@ -15,8 +15,6 @@ def shown_screen(obj,screen_n,story):
     
     obj.screen_text_centerpos(story[screen_n],250,250)
     
-    
-pygame.init()
 
 pygame.init()
 
