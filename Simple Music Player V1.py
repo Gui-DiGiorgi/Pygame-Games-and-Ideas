@@ -1,5 +1,5 @@
 # Player V1 = Accurate sample freq, but no autoplay/playlist while on background
-# Your songs need to be .mp3 and located on an file named 'input'
+# Your songs need to be .mp3 and located on an folder named 'input'
 
 import pygame
 from pygametexting import pyg_text
