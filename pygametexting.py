@@ -160,6 +160,12 @@ class pyg_text():
         import pygame
         import sys
 
+        # verify if this is a multiline text, if not, display as normal with the corresponding one line command
+
+        if "\n" not in text:
+            self.screen_text_centerpos(text, x_pos, y_pos)
+            return None
+
         # var_x has the default as True, that means it selects the beginning of the text
         # based on the usable text divided by the number of text lines
         # the middle of that average length will be located in the set x_pos
@@ -237,6 +243,12 @@ class pyg_text():
     def screen_multtext_initpos(self,text, x_pos, y_pos, y_dist, size=None, color=None, txtfont=None, win=None):
         import pygame
         import sys
+
+        # verify if this is a multiline text, if not, display as normal with the corresponding one line command
+
+        if "\n" not in text:
+            self.screen_text_initpos(text, x_pos, y_pos)
+            return None
         
         if win==None:
             win=self.Win
@@ -293,6 +305,12 @@ class pyg_text():
     def screen_multtext_limitpos(self,text, x_pos, y_pos, y_dist, size=None, color=None, txtfont=None, win=None):
         import pygame
         import sys
+
+        # verify if this is a multiline text, if not, display as normal with the corresponding one line command
+
+        if "\n" not in text:
+            self.screen_text_limitpos(text, x_pos, y_pos)
+            return None
         
         if win==None:
             win=self.Win
